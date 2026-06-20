@@ -1,4 +1,3 @@
-/* Barcha elementlar uchun standart qiymatlarni tozalash */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +5,6 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Fon va markazlashtirish */
 body {
     background-color: #f0f2f5;
     display: flex;
@@ -15,7 +13,6 @@ body {
     height: 100vh;
 }
 
-/* Forma kartasi dizayni */
 form {
     background-color: #ffffff;
     width: 380px;
@@ -26,7 +23,6 @@ form {
     flex-direction: column;
 }
 
-/* Label (yozuv) dizayni */
 form label {
     font-size: 14px;
     font-weight: 600;
@@ -35,12 +31,10 @@ form label {
     margin-top: 20px;
 }
 
-/* Birinchi label ustida ortiqcha joy qolmasligi uchun */
 form label:first-child {
     margin-top: 0;
 }
 
-/* Input maydonlari */
 form input {
     width: 100%;
     padding: 12px 15px;
@@ -56,23 +50,19 @@ form input:focus {
     box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
 }
 
-/* Tugma vazifasidagi havola */
-/* Oldingi holat: form a { ... } va form a:hover { ... } */
-
-/* Yangi holat: */
 form button {
     display: inline-block;
     margin-top: 30px;
     width: 100%;
     background-color: #007bff;
     color: #ffffff;
-    border: none; /* Tugma uchun ramkani olib tashlash */
+    border: none;
     text-align: center;
     padding: 14px;
     border-radius: 6px;
     font-size: 16px;
     font-weight: 600;
-    cursor: pointer; /* Sichqoncha borganda qo'lcha chiqishi uchun */
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
