@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="gemini-svg.svg" />
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="post">
-        <label for="text">foydalnuvchi nomi</label>
-        <input id="text" type="text" placeholder="neme">
-        <label for="email">email</label>
-        <input id="email" type="email" placeholder="email">
-        <label for="password">parol</label>
-        <input  type="password" id="password">
-        <a href="otish.html">royhatdan otish </a>
+    <form action="otish.html" method="get">
+        <label for="text">Foydalanuvchi nomi</label>
+        <input id="text" type="text" placeholder="name" required>
+        
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="email" required>
+        
+        <label for="password">Parol</label>
+        <input type="password" id="password" required>
+        
+        <button type="submit">Ro'yxatdan o'tish</button>
     </form>
 </body>
 </html>

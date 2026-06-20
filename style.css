@@ -1,4 +1,4 @@
-/* Barcha elementlar uchun standart qiymatlarni olib tashlash */
+/* Barcha elementlar uchun standart qiymatlarni tozalash */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Ekranni to'liq egallab, formani o'rtaga joylashtirish */
+/* Fon va markazlashtirish */
 body {
     background-color: #f0f2f5;
     display: flex;
@@ -15,19 +15,32 @@ body {
     height: 100vh;
 }
 
-/* Forma uchun maxsus dizayn (Karta ko'rinishi) */
+/* Forma kartasi dizayni */
 form {
     background-color: #ffffff;
-    width: 350px;
-    padding: 40px 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 380px;
+    padding: 40px 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Elementlar orasidagi masofa */
 }
 
-/* Input (kiritish) maydonlari uchun dizayn */
+/* Label (yozuv) dizayni */
+form label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+
+/* Birinchi label ustida ortiqcha joy qolmasligi uchun */
+form label:first-child {
+    margin-top: 0;
+}
+
+/* Input maydonlari */
 form input {
     width: 100%;
     padding: 12px 15px;
@@ -35,31 +48,38 @@ form input {
     border-radius: 6px;
     font-size: 16px;
     outline: none;
-    transition: border-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-/* Input ustiga bosilganda (focus) ramka rangini o'zgartirish */
 form input:focus {
     border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
 }
 
-/* Havola (knopka vazifasini bajaruvchi) uchun dizayn */
-form a {
+/* Tugma vazifasidagi havola */
+/* Oldingi holat: form a { ... } va form a:hover { ... } */
+
+/* Yangi holat: */
+form button {
     display: inline-block;
+    margin-top: 30px;
     width: 100%;
     background-color: #007bff;
     color: #ffffff;
-    text-decoration: none;
+    border: none; /* Tugma uchun ramkani olib tashlash */
     text-align: center;
-    padding: 12px;
+    padding: 14px;
     border-radius: 6px;
     font-size: 16px;
     font-weight: 600;
+    cursor: pointer; /* Sichqoncha borganda qo'lcha chiqishi uchun */
     transition: background-color 0.3s ease;
 }
 
-/* Sishqoncha olib borilganda (hover) rangini to'qlashtirish */
+form button:hover {
+    background-color: #0056b3;
+}
+
 form a:hover {
     background-color: #0056b3;
 }
