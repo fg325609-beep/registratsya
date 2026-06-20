@@ -1,0 +1,65 @@
+/* Barcha elementlar uchun standart qiymatlarni olib tashlash */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Ekranni to'liq egallab, formani o'rtaga joylashtirish */
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Forma uchun maxsus dizayn (Karta ko'rinishi) */
+form {
+    background-color: #ffffff;
+    width: 350px;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Elementlar orasidagi masofa */
+}
+
+/* Input (kiritish) maydonlari uchun dizayn */
+form input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Input ustiga bosilganda (focus) ramka rangini o'zgartirish */
+form input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+/* Havola (knopka vazifasini bajaruvchi) uchun dizayn */
+form a {
+    display: inline-block;
+    width: 100%;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+/* Sishqoncha olib borilganda (hover) rangini to'qlashtirish */
+form a:hover {
+    background-color: #0056b3;
+}
